@@ -1,0 +1,52 @@
+Usage:
+         jtreg options... tests...
+
+Tests can be given as files or folders containing test files.
+
+For brief details about a topic, use "-help <term> ...". The argument <term> is
+a command option or other word related to the topic. Use "-help all" to show all
+of the help entries.
+
+Information is available for the following topics.
+
+Verbose Options
+                These options control the amount of output written to the
+                console while running tests
+
+Documentation Options
+                Options for additional documentation
+General Options
+
+Test Selection Options
+                These options can be used to refine the set of tests to be
+                executed.
+
+Test Mode Options
+                When the JavaTest harness is used to run tests, two possibly
+                different versions of the JDK are used: the JDK version used to
+                run the harness and the JDK version used to run the test(s). The
+                following options provide a means to specify the JDK version
+                used to run the tests. The default is to use the same JDK
+                version (provided by JAVA_HOME) for both the harness and the
+                tests, and for each test to run in its own JVM.
+
+JDK-related Options
+                By default, tests will be run using the default JVM in the test
+                JDK. You can pass all applicable JVM options via using
+                -vmoption; in addition, most common JVM options are also
+                supported directly. For full details of any option, consult the
+                documentation for that version of the JDK, or try using "java
+                -help" or "java -X". If an option is not applicable to a
+                particular platform or JDK release, it will be rejected.
+
+
+For more details and examples, see the online help. You can access this directly
+from the command line with "-onlineHelp <word>...", or you can start the
+JavaTest harness and use the Help menu.
+
+jtreg can also be run with Ant. See the online help for details. For example,
+use the "-onlineHelp ant" command line option.
+
+Copyright 2008 Sun Microsystems, Inc. All Rights Reserved.
+Use is subject to license terms.
+
